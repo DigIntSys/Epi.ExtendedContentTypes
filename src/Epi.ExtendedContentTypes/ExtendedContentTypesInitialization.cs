@@ -22,7 +22,7 @@ namespace Geta.Epi.ExtendedContentTypes
 
         public void ConfigureContainer(ServiceConfigurationContext context)
         {
-            context.Container.Configure(ConfigureContainer);
+            context.StructureMap().Configure(ConfigureContainer);
         }
 
         private void ConfigureContainer(ConfigurationExpression container)
